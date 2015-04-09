@@ -10,9 +10,9 @@ def fibs(n)
     result
 end
 
-# Recursive version
+# Fast recursive version tested up to 7500th number
 def fibs_rec(n, result = [], prev=0, current = 1)
    return n == 0 ? result : fibs_rec(n - 1, result.push(prev + current),  current, (prev + current) )
 end
 
-puts fibs_rec(10).to_s
+puts fibs_rec(50).to_s
